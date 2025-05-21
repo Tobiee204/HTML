@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      animation: slideDown 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    p {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+      animation-delay: 1s;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hello HTML!</h1>
+
+  <p>I am learning <strong>HTML and CSS</strong>!</p>
+
+</body>
+</html>

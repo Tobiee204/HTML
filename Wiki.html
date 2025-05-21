@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Brown Bear</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: fadeSlideDown 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    p, h2, ol, ul, img {
+      animation: fadeIn 1.5s ease-in forwards;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 10px auto 30px;
+      animation-delay: 0.5s;
+    }
+
+    img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      max-width: 90%;
+      height: auto;
+      margin: 20px auto;
+      animation-delay: 0.8s;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #444;
+      animation-delay: 1s;
+    }
+
+    ol, ul {
+      text-align: left;
+      max-width: 500px;
+      margin: 10px auto;
+      font-size: 16px;
+      line-height: 1.6;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Brown Bear</h1>
+
+  <p>The brown bear is a large bear species found across much of northern Eurasia and North America.</p>
+
+  <img src="images/bear.jpg" alt="Brown Bear" width="400" />
+
+  <p>
+    Learn more about the brown bear on 
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank" rel="noopener noreferrer">Wikipedia</a>.
+  </p>
+
+  <h2>Top 3 Characteristics</h2>
+  <ol>
+    <li>Large size with powerful build</li>
+    <li>Omnivorous diet including berries, roots, and fish</li>
+    <li>Hibernates during winter months</li>
+  </ol>
+
+  <h2>Natural Habitats</h2>
+  <ul>
+    <li>Forests</li>
+    <li>Mountains</li>
+    <li>Tundra</li>
+  </ul>
+
+</body>
+</html>
